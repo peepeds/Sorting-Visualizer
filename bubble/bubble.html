@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="./bubble.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <a href="../index.html" id="home-button">Home</a>
+    <hr>
+    <h2>Sorting Simulator</h2>
+    <div class="sorting-algorithm">
+        <div class="sort-box" id="bubble-sort">Bubble</div>
+        <div class="sort-box" id="insertion-sort"><a href="../insertion/insertion.html">Insertion</a></div>
+        <div class="sort-box" id="quick-sort"><a href="../quick/quick.html">Quick</a> </div>
+        <div class="sort-box" id="bogo-sort"><a href="../bogo/bogo.html">Bogo</a> </div>
+        <div class="sort-box" id="heap-sort"><a href="../heap/heap.html">Heap</a> </div>
+        <div class="sort-box" id="shell-sort"><a href="../shell/shell.html">Shell</a> </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div style="margin-top: 20px;">
+        <input id="array-size-slider" type="range" min="10" max="100" step="1" value="40">
+        <button id="randomize-button" onClick="randomize()">Random</button>
+        <button id="sort-button" onClick="sort()">Sort</button>
+    </div>
+
+    <div id="algorithm-info">
+        <div class="info-section">
+            <h3>Bubble Sort Algorithm</h3>
+            
+            <p>1. Run a loop over the entire list or array.
+            <br>2. Compare the element at the index i with the element at i + 1. 
+            <br>3. If the element at i is greater than the element at i + 1, swap both the elements 
+            <br>4. Else, move to the next element. </p>
+        
+        </div>
+        <div class="info-section">
+            <h3>Time Complexity</h3>
+            <p>Best Case     : O(n)
+            <br>Average Case: O(n^2)
+            <br>Worst Case: O(n^2)</p>
+        </div> 
+    </div>
+
+    <script src="./bubble.js"></script>
+</body>
+
+</html>

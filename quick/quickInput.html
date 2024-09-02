@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Simulator</title>
+    <link rel="stylesheet" href="../styleInput.css">
+    <link rel="stylesheet" href="./quickInput.css">
+
+</head>
+
+<body>
+    <a href="../index.html" id="home-button">Home</a>
+    <div class="container">
+        <h2>Sorting Simulator</h2>
+        <div class="sorting-algorithm">
+            <div class="sort-box" id="bubble-sort"><a href="../bubble/bubbleInput.html">Bubble</a></div>
+            <div class="sort-box" id="insertion-sort"><a href="../insertion/insertionInput.html">Insertion</a></div>
+            <div class="sort-box" id="quick-sort">Quick</div>
+            <div class="sort-box" id="bogo-sort"><a href="../bogo/bogoInput.html">Bogo</a> </div>
+            <div class="sort-box" id="heap-sort"><a href="../heap/heapInput.html">Heap</a> </div>
+            <div class="sort-box" id="shell-sort"><a href="../shell/shellInput.html">Shell</a> </div>
+        </div>
+        <h3 class="array-input-label">Array Input</h3>
+        <input class="array-input" id="array-input" placeholder="Enter numbers, separated by spaces...">
+        <button class="submit-array" id="submit-array">Sort</button>
+        <div class="input-error" id="input-error"></div>
+        <h3 class="array-output-label">Array Output</h3>
+        <div class="array" id="array"></div>
+        <div class="status" id="status"></div>
+    </div>
+    <script src="./quickInput.js"></script>
+</body>
+
+</html>

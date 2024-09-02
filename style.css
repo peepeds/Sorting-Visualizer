@@ -1,0 +1,135 @@
+body {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    min-width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sorting-algorithm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sort-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sort-box.active {
+    background-color: #09a0aa;
+    color: white;
+    pointer-events: none;
+}
+
+#container {
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    width: 10px;
+    margin: 1px;
+    background-color: black;
+}
+
+.bar-red {
+    background-color: red;
+}
+
+.bar-green {
+    background-color: blue;
+}
+
+#array-size-slider {
+    width: 200px;
+    margin-top: 20px;
+    background-color: #ddd;
+}
+
+#array-size-slider::-webkit-slider-thumb {
+    background-color: #09a0aa;
+}
+
+#randomize-button,
+#sort-button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #09a0aa;
+    font: inherit;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#randomize-button:hover,
+#sort-button:hover {
+    background-color: #06585e;
+    transform: scale(1.02);
+}
+
+#algorithm-info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#algorithm-info .info-section {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-error {
+    color: red;
+}
+
+#home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #09a0aa;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    size: 5px;
+}
+
+#home-button:hover {
+    background-color: #06585e;
+}
+
+
+#algorithm-info .info-section {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#algorithm-info .info-section:nth-child(2) {
+    width: 30%;
+}

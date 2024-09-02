@@ -1,0 +1,23 @@
+
+#algorithm-info .info-section {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#algorithm-info .info-section:nth-child(2) {
+    width: 30%;
+}
+
+#bubble-sort a,
+#insertion-sort a,
+#heap-sort a,
+#quick-sort a,
+#bogo-sort a,
+#selection-sort a,
+#shell-sort a {
+    text-decoration: none;
+    color: #09a0aa;
+}

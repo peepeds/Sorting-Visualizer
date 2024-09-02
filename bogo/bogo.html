@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sorting Visualizer - Bogo Sort</title>
+    <link rel="stylesheet" type="text/css" href="./bogo.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <a href="../index.html" id="home-button">Home</a>
+    <hr>
+    <h2>Sorting Simulator</h2>
+    <div class="sorting-algorithm">
+        <div class="sort-box" id="bubble-sort"><a href="../bubble/bubble.html">Bubble</a></div>
+        <div class="sort-box" id="insertion-sort"><a href="../insertion/insertion.html">Insertion</a></div>
+        <div class="sort-box" id="quick-sort"><a href="../quick/quick.html">Quick</a> </div>
+        <div class="sort-box" id="bogo-sort">Bogo </div>
+        <div class="sort-box" id="heap-sort"><a href="../heap/heap.html">Heap</a> </div>
+        <div class="sort-box" id="shell-sort"><a href="../shell/shell.html">Shell</a> </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div style="margin-top: 20px;">
+        <input id="array-size-slider" type="range" min="2" max="100" step="1" value="3">
+        <button id="randomize-button" onClick="randomize()">Randomize</button>
+        <button id="sort-button" onClick="sort()">Sort</button>
+    </div>
+
+    <div id="algorithm-info">
+        <div class="info-section left-section">
+            <h3>Bogo Sort Algorithm</h3>
+            <p>1. Randomize the array.
+                <br>2. Check if the array is sorted.
+                <br>3. If not sorted, repeat the process.</p>
+        </div>
+        <div class="info-section right-section">
+            <h3>Time Complexity</h3>
+            <p>Average Case: Unbounded
+                <br>Worst Case: Unbounded</p>
+        </div>
+    </div>
+
+    <script src="./bogo.js"></script>
+</body>
+
+</html>

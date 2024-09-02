@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="./quick.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    
+</head>
+
+<body>
+    <a href="../index.html" id="home-button">Home</a>
+    <hr>
+    <h2>Sorting Simulator</h2>
+    <div class="sorting-algorithm">
+        <div class="sort-box" id="bubble-sort"><a href="../bubble/bubble.html">Bubble</a></div>
+        <div class="sort-box" id="insertion-sort"><a href="../insertion/insertion.html">Insertion</a></div>
+        <div class="sort-box" id="quick-sort">Quick</a> </div>
+        <div class="sort-box" id="bogo-sort"><a href="../bogo/bogo.html">Bogo</a></div> 
+        <div class="sort-box" id="heap-sort"><a href="../heap/heap.html">Heap</a> </div>
+        <div class="sort-box" id="shell-sort"><a href="../shell/shell.html">Shell</a> </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div style="margin-top: 20px;">
+        <input id="array-size-slider" type="range" min="10" max="100" step="1" value="40">
+        <button id="randomize-button" onClick="randomize()">Random</button>
+        <button id="sort-button" onClick="sort()">Sort</button>
+    </div>
+
+    <div id="algorithm-info">
+        <div class="info-section" width="70%">
+            <h3>Quick Sort Algorithm</h3>
+            <p>1. Choose a pivot element from the array.
+                <br>2. Partition the array into two sub-arrays: elements less than the pivot and elements greater than the pivot.
+                <br>3. Recursively sort the sub-arrays.
+                <br>4. Combine the sorted sub-arrays to get the final sorted array.</p>
+        </div>
+        <div class="info-section" width="30%">
+            <h3>Time Complexity</h3>
+            <p>Best Case     : O(n log n)
+                <br>Average Case: O(n log n)
+                <br>Worst Case: O(n^2) </p>
+        </div>
+    </div>
+
+    <script src="./quick.js"></script>
+</body>
+
+</html>

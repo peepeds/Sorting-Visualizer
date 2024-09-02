@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sorting Visualizer - Heap Sort</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="./heap.css">
+</head>
+
+<body>
+    <a href="../index.html" id="home-button">Home</a>
+    <hr>
+    <h2>Sorting Simulator</h2>
+    <div class="sorting-algorithm">
+        <div class="sort-box" id="bubble-sort"><a href="../bubble/bubble.html">Bubble</a></div>
+        <div class="sort-box" id="insertion-sort"><a href="../insertion/insertion.html">Insertion</a></div>
+        <div class="sort-box" id="quick-sort"><a href="../quick/quick.html">Quick</a> </div>
+        <div class="sort-box" id="bogo-sort"><a href="../bogo/bogo.html">Bogo</a> </div>
+        <div class="sort-box" id="heap-sort">Heap</div>
+        <div class="sort-box" id="shell-sort"><a href="../shell/shell.html">Shell</a> </div>
+    </div>
+
+    <div id="container"></div>
+
+    <div style="margin-top: 20px;">
+        <input id="array-size-slider" type="range" min="10" max="100" step="1" value="40">
+        <button id="randomize-button" onClick="randomize()">Random</button>
+        <button id="sort-button" onClick="heapSortAndAnimate()">Sort</button>
+    </div>
+
+    <div id="algorithm-info">
+        <div class="info-section">
+            <h3>Heap Sort Algorithm</h3>
+            <p>1. Build a max heap from the input data.
+                <br>2. Swap the root (maximum element) with the last element.
+                <br>3. Heapify the root of the heap.
+                <br>4. Repeat steps 2 and 3 until the heap is empty.</p>
+        </div>
+        <div class="info-section">
+            <h3>Time Complexity</h3>
+            <p>Best Case     : O(n log n)
+                <br>Average Case: O(n log n)
+                <br>Worst Case    : O(n log n)</p>
+        </div>
+    </div>
+
+    <script src="./heap.js"></script>
+</body>
+
+</html>
